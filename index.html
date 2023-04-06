@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="./images/favicon.png">
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js" defer></script>
+    <title>Pokedex</title>
+</head>
+
+<body>
+<main class="container">
+     <div id="title">
+        <h1>Pokedex</h1>
+    </div>
+    <form onsubmit="getPokemon(event)">
+        <input type="text" name="pokemon" autocomplete="off">
+    </form>
+    <div id="pokedex">
+        <div id="pokemon-image-div">
+            <img src="./images/poke-shadow.png" id="pokemon-img">
+        </div>
+
+        <section id="pokemon-info">
+            <div id="pokemon-name-container">
+                <div id="pokemon-name"></div>
+            </div>
+
+            <div id="pokemon-id-container">   
+                <div id="pokemon-id"></div>
+            </div>
+            <hr>
+            <div id="pokemon-stat-container">
+                 <div id="pokemon-stats"></div>
+            </div>
+            <div id="pokemon-type-container">
+                 <div id="pokemon-type"></div>
+            </div>
+           
+        </section>
+
+    </div>
+
+
+</main>
+   
+</body>
+
+</html>
